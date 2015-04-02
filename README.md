@@ -8,7 +8,7 @@ resources: 1
 
 ## Objective
 
-You will be building out Ruby's `#all?` method. You'll be adding an method to the the Enumerable module to accomplish this.
+You will be building out Ruby's `#all?` method. You'll be adding a method to the the Enumerable module to accomplish this.
 
 ## About all
 
