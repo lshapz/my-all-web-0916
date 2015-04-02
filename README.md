@@ -29,7 +29,7 @@ If the block is not given, Ruby adds an implicit block of `{ |obj| obj }` which 
 
 This is how your `#my_all?` method should behave (it is also how Ruby's `#all?` behaves):
 
-```
+```ruby
 [true, true, true].my_all?
 #=> true
 
