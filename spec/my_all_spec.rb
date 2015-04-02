@@ -23,13 +23,15 @@ describe Enumerable do
     end
 
     it "doesn't use clone" do
-      expect_any_instance_of(Array).to_not receive(:clone)
-      animals.my_all?
+      my_animals = animals
+      expect(my_animals).to_not receive(:clone)
+      my_animals.my_all?
     end
 
-    it "doesn't use #all" do     
-      expect_any_instance_of(Array).to_not receive(:all?)
-      animals.my_all?
+    it "doesn't use #all?" do 
+      my_animals = animals    
+      expect(my_animals).to_not receive(:all?)
+      my_animals.my_all?
     end
 
     context "without block" do
