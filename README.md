@@ -16,18 +16,20 @@ Since Ruby's `all?` method is part of the Enumerable module, it can be called on
 
 It takes a block and returns either true or false. It returns true if every element when yeilded to the block evaluates to true. It returns false if not every element, when yeilded to the block, returns true.
 
+This is how your `#my_all?` method should behave (it is also how Ruby's `#all?` behaves) when passed a block:
+
 ```ruby
 animals = ["ant", "bear", "cat"]
-animals.all? { |word| word.length >= 3 } 
+animals.my_all? { |word| word.length >= 3 } 
 #=> true
 
-animals.all? { |word| word.length >= 4 } 
+animals.my_all? { |word| word.length >= 4 } 
 #=> false
 ```
 
 If the block is not given, Ruby adds an implicit block of `{ |obj| obj }` which will cause `#all?` to return true when none of the collection members are false or nil.
 
-This is how your `#my_all?` method should behave (it is also how Ruby's `#all?` behaves):
+This is how your `#my_all?` method should behave (it is also how Ruby's `#all?` behaves) when it's not passed a block:
 
 ```ruby
 [true, true, true].my_all?
