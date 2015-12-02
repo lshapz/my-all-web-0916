@@ -48,3 +48,5 @@ You may not call on Ruby's `#all?` method to accomplish this task. While you sho
 ## Resources
 
 * [Ruby's All? Method](http://ruby-doc.org/core-2.2.1/Enumerable.html#method-i-all-3F)
+
+<a href='https://learn.co/lessons/my-all' data-visibility='hidden'>View this lesson on Learn.co</a>
