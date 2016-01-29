@@ -49,4 +49,4 @@ You may not call on Ruby's `#all?` method to accomplish this task. While you sho
 
 * [Ruby's All? Method](http://ruby-doc.org/core-2.2.1/Enumerable.html#method-i-all-3F)
 
-<a href='https://learn.co/lessons/my-all' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-all' title='My All?'>My All?</a> on Learn.co and start learning to code for free.</p>
